@@ -1,0 +1,25 @@
+{
+  "lockmakerOVA": "/home/SLE-15SP3.x86_64-15.3-254.ova",
+  "Servers": [
+    {
+      "esxiHost": "10.10.103.111",
+      "username": "root",
+      "Password": "HP1nvent!",
+	  "Datastore": "vsanDatastoreT",
+	  "vsphereNetwork": "VM Network",
+	  "lockmakerMemInGB": "32",
+	  "lockmakerCPUCount": "16",
+	  "lockmakerDiskSizeinGB": "800"
+    },
+    {
+      "esxiHost": "10.10.103.112",
+      "username": "root",
+      "Password": "HP1nvent!",
+	  "Datastore": "vsanDatastoreT",
+	  "vsphereNetwork": "VM Network",
+	  "lockmakerMemInGB": "32",
+	  "lockmakerCPUCount": "16",
+	  "lockmakerDiskSizeinGB": "800"
+    }
+  ]
+}

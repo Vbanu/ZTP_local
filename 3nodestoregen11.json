@@ -1,0 +1,70 @@
+{
+    "StoreID": "0116",
+    "DEDID":"123456",
+    "Servers":[
+        {
+            "iloIP": "10.10.103.51",
+            "mgmtIP": "10.10.103.60",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "03:d1:f2:6b:01:e9:7f:32:40:f1:1f:36:14:34:21:b5:c9"
+        },
+        {
+            "iloIP": "10.10.103.54",
+            "mgmtIP": "10.10.103.61",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "02:9b:c5:99:38:af:7e:31:5a:a9:89:30:ca:ff:e7:43:41"
+        },
+        {
+            "iloIP": "10.10.103.4",
+            "mgmtIP": "10.10.103.112",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "23:11:a3:e3:55:55:35:37:7e:f6:e3:2c:da:63:1c:83"
+        }
+    ],
+    "vCenter": {
+        "IP": "10.10.1.67",
+        "username": "administrator@vsphere.local",
+        "password": "HP1nvent!",
+        "DCName": "ST8995",
+        "clusterName": "ST8995_New"
+    },
+        "ArubaSwitch": {
+        "MDFSwitchIP": "10.10.103.111",
+        "username": "root",
+        "password": "HP1nvent!",
+        "IDFSwitchIP": "10.10.103.112"
+    },
+	"WitnessOVA": {
+		"vSANWitnessOVA": "/home/VMware-VirtualSAN-Witness-7.0U2-17630552.ova",
+		"ntp1": "10.10.197.58",
+		"ntp2": "10.10.197.58",
+		"datastore": "TestvsanDatastore",
+		"vmname": "WITNESS",
+		"password": "HP1nvent!",
+		"dns1": "10.10.197.3",
+		"dns2": "10.10.197.3",
+		"hostname": "witness.atlpss.hp.net",
+		"dnsdomain": "atlpss.hp.net",
+		"ipaddress0": "10.10.103.66",
+		"netmask0": "255.255.0.0",
+		"gateway0": "10.10.1.4",
+		"network0": "VM Network",
+		"ipaddress1": "172.16.1.12",
+		"netmask1": "255.255.255.0",
+		"network1": "VM Network",
+		"deploymentsize": "tiny",
+		"route1ip": "172.16.2.0",
+		"route1gw": "172.16.1.1",
+		"route1pfx": "24",
+		"route2ip": "172.16.3.0",
+		"route2gw": "172.16.1.1",
+		"route2pfx": "24",
+		"vsannetwork": "Secondary" 
+	}
+}

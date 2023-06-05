@@ -1,0 +1,68 @@
+{
+    "StoreID": "0116",
+    "DEDID":"123456",
+    "Servers":[
+        {
+            "iloIP": "10.10.103.24",
+            "mgmtIP": "10.10.103.111",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "01:bd:cb:29:a2:8f:f2:f4:c3:e5:c0:6b:03:c8:aa:c4:3c"
+        },
+        {
+            "iloIP": "10.10.103.25",
+            "mgmtIP": "10.10.103.112",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "03:63:16:88:86:1b:bf:60:28:d6:fd:ad:09:f1:25:4a:41"
+        }
+    ],
+    "vCenter": {
+        "IP": "10.10.1.67",
+        "username": "administrator@vsphere.local",
+        "password": "HP1nvent!",
+        "DCName": "GEN11ZTP",
+        "clusterName": "Two-Node-vSAN-G11"
+    },
+    "Witness": {
+        "IP": "10.10.103.74",
+        "username": "root",
+        "password": "HP1nvent!",
+        "DCName": "Witness-DC"
+    },
+	"ArubaSwitch": {
+        "MDFSwitchIP": "10.10.103.111",
+        "username": "root",
+        "password": "HP1nvent!",
+        "IDFSwitchIP": "10.10.103.112"
+    },
+    "WitnessOVA": {
+		"vSANWitnessOVA": "/home/VMware-VirtualSAN-Witness-7.0U2-17630552.ova",
+		"ntp1": "10.10.197.58",
+		"ntp2": "10.10.197.58",
+		"datastore": "TestvsanDatastore",
+		"vmname": "WITNESS",
+		"password": "HP1nvent!",
+		"dns1": "10.10.197.3",
+		"dns2": "10.10.197.3",
+		"hostname": "witness.atlpss.hp.net",
+		"dnsdomain": "atlpss.hp.net",
+		"ipaddress0": "10.10.103.66",
+		"netmask0": "255.255.0.0",
+		"gateway0": "10.10.1.4",
+		"network0": "VM Network",
+		"ipaddress1": "172.16.1.12",
+		"netmask1": "255.255.255.0",
+		"network1": "VM Network",
+		"deploymentsize": "tiny",
+		"route1ip": "172.16.2.0",
+		"route1gw": "172.16.1.1",
+		"route1pfx": "24",
+		"route2ip": "172.16.3.0",
+		"route2gw": "172.16.1.1",
+		"route2pfx": "24",
+		"vsannetwork": "Secondary" 
+	}	
+}

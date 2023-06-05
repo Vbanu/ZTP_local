@@ -1,0 +1,59 @@
+{
+    "StoreID": "2651",
+    "Servers":[
+        {
+            "iloIP": "192.168.0.112",
+            "mgmtIP": "192.168.0.131",
+            "username": "admin",
+            "password": "Password!234",
+            "osPassword": "nutanix/4u"
+        },
+        {
+            "iloIP": "192.168.0.113",
+            "mgmtIP": "192.168.0.132",
+            "username": "admin",
+            "password": "Password!234",
+            "osPassword": "nutanix/4u"
+        },
+        {
+            "iloIP": "192.168.0.114",
+            "mgmtIP": "192.168.0.133",
+            "username": "admin",
+            "password": "Password!234",
+            "osPassword": "nutanix/4u"
+        }
+    ],
+    "vCenter": {
+        "IP": "192.168.0.134",
+        "username": "administrator@hou-thd.local",
+        "password": "Password!234",
+        "DCName": "Store2651",
+        "clusterName": "Store2651-Cluster1"
+    },
+    "Prism": {
+        "clusterIP": "192.168.0.140",
+        "peUsername": "admin",
+        "pePassword": "Password!234",
+        "pcIP": "192.168.0.136",
+        "pcUsername": "admin",
+        "pcPassword": "Password!234"	
+    },
+    "CVMs":[
+        {
+            "mgmtIP": "192.168.0.137",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+            
+        },
+        {
+            "mgmtIP": "192.168.0.138",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+        },
+        {
+            "mgmtIP": "192.168.0.139",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+        }
+    ]
+}

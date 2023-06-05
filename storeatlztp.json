@@ -1,0 +1,62 @@
+{
+    "StoreID": "2651",
+    "Servers":[
+        {
+            "iloIP": "10.10.103.50",
+            "mgmtIP": "10.10.103.60",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "01:c0:4f:a2:73:58:11:03:0c:5b:e9:a1:d5:0c:87:97:72"
+        },
+        {
+            "iloIP": "10.10.103.51",
+            "mgmtIP": "10.10.103.61",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "01:25:97:e4:f7:c0:a8:7a:b1:20:fc:dc:9f:18:31:3b:76"
+        },
+        {
+            "iloIP": "10.10.103.52",
+            "mgmtIP": "10.10.103.62",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "02:36:37:9c:c1:6a:ec:6a:15:74:2e:7c:bb:bf:cb:56:aa"
+        }
+    ],
+    "vCenter": {
+        "IP": "10.10.1.67",
+        "username": "administrator@vsphere.local",
+        "password": "HP1nvent!",
+        "DCName": "ZTPDEMO1",
+        "clusterName": "gl-G2i-2"
+    },
+    "Prism": {
+        "clusterIP": "192.168.0.140",
+        "peUsername": "admin",
+        "pePassword": "Password!234",
+        "pcIP": "192.168.0.136",
+        "pcUsername": "admin",
+        "pcPassword": "Password!234"	
+    },
+    "CVMs":[
+        {
+            "mgmtIP": "192.168.0.137",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+            
+        },
+        {
+            "mgmtIP": "192.168.0.138",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+        },
+        {
+            "mgmtIP": "192.168.0.139",
+            "username": "nutanix",
+            "password": "nutanix/4u"
+        }
+    ]
+}

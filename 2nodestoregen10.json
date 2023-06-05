@@ -1,0 +1,40 @@
+{
+    "StoreID": "0116",
+    "Servers":[
+        {
+            "iloIP": "10.10.103.51",
+            "mgmtIP": "10.10.103.60",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "01:bd:cb:29:a2:8f:f2:f4:c3:e5:c0:6b:03:c8:aa:c4:3c"
+        },
+        {
+            "iloIP": "10.10.103.54",
+            "mgmtIP": "10.10.103.61",
+            "username": "hpadmin",
+            "password": "atlpresales",
+            "osPassword": "HP1nvent!",
+            "idevId": "03:63:16:88:86:1b:bf:60:28:d6:fd:ad:09:f1:25:4a:41"
+        }
+    ],
+    "vCenter": {
+        "IP": "10.10.1.67",
+        "username": "administrator@vsphere.local",
+        "password": "HP1nvent!",
+        "DCName": "PYGEN10ZTP",
+        "clusterName": "MyCluster"
+    },
+    "Witness": {
+        "IP": "10.10.103.74",
+        "username": "root",
+        "password": "HP1nvent!",
+        "DCName": "Witness-DC"
+    },
+	"ArubaSwitch": {
+        "MDFSwitchIP": "10.10.103.111",
+        "username": "root",
+        "password": "HP1nvent!",
+        "IDFSwitchIP": "10.10.103.112"
+    }	
+}
