@@ -1,0 +1,33 @@
+FROM alpine:3.14
+
+##Installing Python3 & PIP3##
+RUN apk add --no-cache python3 py3-pip \
+    && apk add --no-cache curl \
+    && mkdir -p /usr/local/powercli \
+    && curl https://download3.vmware.com/software/vmw-tools/powerclicore/PowerCLI_Core.zip -o PowerCLI_Core.zip \
+    && unzip PowerCLI_Core.zip -d /usr/local/powercli \
+    && rm PowerCLI_Core.zip \
+    && apk del curl
+
+##Installing Powershell and required Packages##
+RUN apk add --no-cache ca-certificates less ncurses-terminfo-base krb5-libs libgcc libintl libssl1.1 libstdc++ tzdata userspace-rcu zlib icu-libs curl
+RUN apk -X https://dl-cdn.alpinelinux.org/alpine/edge/testing add --no-cache lttng-ust
+RUN curl -L https://github.com/PowerShell/PowerShell/releases/download/v7.3.4/powershell-7.3.4-linux-alpine-x64.tar.gz -o /tmp/powershell.tar.gz
+RUN mkdir -p /opt/microsoft/powershell/7
+RUN tar zxf /tmp/powershell.tar.gz -C /opt/microsoft/powershell/7
+RUN chmod +x /opt/microsoft/powershell/7/pwsh
+RUN ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh
+RUN pwsh -Command "Install-Module -Name VMware.PowerCLI -Force"
+RUN pwsh -Command "Import-Module -Name VMware.PowerCLI"
+#RUN pwsh -Command "Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false"
+RUN apk add --no-cache --virtual .pynacl_deps build-base python3-dev libffi-dev
+
+##Installing Python3 packages for ZTP##
+COPY requirements.txt .
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+##Copying the ZTP Code to the Image##
+COPY 2-node-vsan  /scripts/ztp
+
+#CMD ["/bin/sh"]
